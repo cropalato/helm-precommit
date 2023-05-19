@@ -1,5 +1,7 @@
 -   id: helm-lint
     name: helm-lint
     description: ''
-    entry: helm lint
-    language: system
+    entry: hooks/helm-lint.sh
+    language: script
+    files: \.((ya?ml)|(tpl))$
+    require_serial: true

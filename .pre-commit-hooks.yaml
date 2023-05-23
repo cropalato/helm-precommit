@@ -1,7 +1,8 @@
 -   id: helm-lint
     name: helm-lint
-    description: ''
+    description: 'Run helm lint exluding all files'
     entry: hooks/helm-lint.sh
     language: script
-    files: \.((ya?ml)|(tpl))$
+    pass_filenames: false
+    always_run: true
     require_serial: true

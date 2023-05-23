@@ -34,5 +34,4 @@ trap 'bash_traceback' ERR
 # propagate ERR trap handler functions, expansions and subshells
 set -o errtrace
 
-helm lint $@
-
+helm template $@

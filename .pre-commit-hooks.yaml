@@ -6,3 +6,11 @@
     pass_filenames: false
     always_run: true
     require_serial: true
+-   id: helm-template
+    name: helm-template
+    description: 'Run helm template exluding all files'
+    entry: hooks/helm-template.sh
+    language: script
+    pass_filenames: false
+    always_run: true
+    require_serial: true
